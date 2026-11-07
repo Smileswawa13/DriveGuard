@@ -1,0 +1,50 @@
+DRIVEGUARD EXTRACTION V4 SUMMARY
+============================================================
+{
+  "source_file": "D:\\Pc Backup\\Documents\\College Files Compilation\\College stuff\\3RD YEAR\\1ST TERM\\CPE126LAB - AI - A361\\M2 Image Processing and Computer Vision Applications\\Project\\harddrive.csv",
+  "source_rows_after_key_validation": 3058798,
+  "exact_full_duplicate_rows_removed": 120497,
+  "unique_drives": 65993,
+  "unique_failure_drives": 205,
+  "snapshot_policy": "one row per drive; failure-labelled terminal day for failed drives; seeded random day for healthy drives",
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.1,
+    "test": 0.15,
+    "website_demo": 0.05
+  },
+  "partitions": {
+    "train": {
+      "drives": 46194,
+      "failure_drives": 143,
+      "healthy_drives": 46051,
+      "failure_prevalence": 0.003095640126423345
+    },
+    "validation": {
+      "drives": 6600,
+      "failure_drives": 21,
+      "healthy_drives": 6579,
+      "failure_prevalence": 0.003181818181818182
+    },
+    "test": {
+      "drives": 9899,
+      "failure_drives": 31,
+      "healthy_drives": 9868,
+      "failure_prevalence": 0.0031316294575209616
+    },
+    "website_demo": {
+      "drives": 3300,
+      "failure_drives": 10,
+      "healthy_drives": 3290,
+      "failure_prevalence": 0.0030303030303030303
+    }
+  },
+  "smart_feature_count": 90,
+  "website_samples": {
+    "files": 5,
+    "rows_each": 200,
+    "failure_rows_each": 2,
+    "source": "separate website-demo drive partition"
+  },
+  "warning": "failure=1 denotes the last operational day before failure; this dataset does not prove multi-day advance warning."
+}
