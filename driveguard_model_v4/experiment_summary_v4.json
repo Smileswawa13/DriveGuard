@@ -1,0 +1,110 @@
+{
+  "train_rows": 46194,
+  "train_failures": 143,
+  "validation_rows": 6600,
+  "validation_failures": 21,
+  "test_rows": 9899,
+  "test_failures": 31,
+  "test_prevalence": 0.0031316294575209616,
+  "smart_features_available": 90,
+  "smart_features_retained": 56,
+  "dropped_features": [
+    "smart_11_normalized",
+    "smart_11_raw",
+    "smart_13_normalized",
+    "smart_13_raw",
+    "smart_15_normalized",
+    "smart_15_raw",
+    "smart_22_normalized",
+    "smart_22_raw",
+    "smart_200_normalized",
+    "smart_200_raw",
+    "smart_201_normalized",
+    "smart_201_raw",
+    "smart_220_normalized",
+    "smart_220_raw",
+    "smart_222_normalized",
+    "smart_222_raw",
+    "smart_223_normalized",
+    "smart_223_raw",
+    "smart_224_normalized",
+    "smart_224_raw",
+    "smart_225_normalized",
+    "smart_225_raw",
+    "smart_226_normalized",
+    "smart_226_raw",
+    "smart_250_normalized",
+    "smart_250_raw",
+    "smart_251_normalized",
+    "smart_251_raw",
+    "smart_252_normalized",
+    "smart_252_raw",
+    "smart_254_normalized",
+    "smart_254_raw",
+    "smart_255_normalized",
+    "smart_255_raw"
+  ],
+  "threshold_selection": "F2 maximization on validation set only; test set not used for tuning",
+  "thresholds": {
+    "Cost-Sensitive Random Forest": {
+      "threshold": 0.43,
+      "validation_f2": 0.3333333333333333,
+      "validation_precision": 0.17647058823529413,
+      "validation_recall": 0.42857142857142855
+    },
+    "SMOTE Random Forest": {
+      "threshold": 0.41000000000000003,
+      "validation_f2": 0.3937007874015748,
+      "validation_precision": 0.23255813953488372,
+      "validation_recall": 0.47619047619047616
+    }
+  },
+  "smote": {
+    "random_state": 42,
+    "k_neighbors": 5
+  },
+  "random_forest": {
+    "n_estimators": 100,
+    "max_depth": 12,
+    "criterion": "gini",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": [
+    {
+      "model": "Cost-Sensitive Random Forest",
+      "threshold": 0.43,
+      "test_rows": 9899,
+      "test_failure_rows": 31,
+      "test_prevalence": 0.0031316294575209616,
+      "accuracy": 0.9916153146782504,
+      "precision": 0.1388888888888889,
+      "recall": 0.3225806451612903,
+      "f1": 0.1941747572815534,
+      "roc_auc": 0.8273663977404971,
+      "average_precision": 0.14548849309095355,
+      "tn": 9806,
+      "fp": 62,
+      "fn": 21,
+      "tp": 10
+    },
+    {
+      "model": "SMOTE Random Forest",
+      "threshold": 0.41000000000000003,
+      "test_rows": 9899,
+      "test_failure_rows": 31,
+      "test_prevalence": 0.0031316294575209616,
+      "accuracy": 0.9928275583392262,
+      "precision": 0.20588235294117646,
+      "recall": 0.45161290322580644,
+      "f1": 0.2828282828282828,
+      "roc_auc": 0.8747711730324148,
+      "average_precision": 0.15436163984963605,
+      "tn": 9814,
+      "fp": 54,
+      "fn": 17,
+      "tp": 14
+    }
+  ],
+  "warning": "Failure-positive counts are small. Metrics have high uncertainty. failure=1 is the last operational day before failure, not a multi-day warning label."
+}
