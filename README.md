@@ -8,10 +8,10 @@
 <p align="center">
   An Artificial Intelligence framework for proactive hardware diagnostics, bridging low-level computer engineering with applied machine learning.
   <br />
-  <a href="#about-the-project"><strong>Explore the docs »</strong></a>
+  <a href="https://1drv.ms/w/c/d8fb259d9d7a075e/IQDtflRP8KK0R4lu88PxWCPVAdPDtsIbF2IG08KFecCNuBo?e=9IC05C"><strong>Explore the docs »</strong></a>
   <br />
   <br />
-  <a href="https://share.streamlit.io/">View Live App</a>
+  <a href="https://driveguard-app.streamlit.app/">View Live App</a>
   ·
   <a href="#installation">Run Locally</a>
 </p>
@@ -68,7 +68,7 @@ DriveGuard/
 ---
 
 ## 🚀 Installation & Running Locally
-
+<a id="installation"></a>
 To run this project on your local machine, follow these steps:
 
 1. **Clone the repository**
@@ -104,7 +104,6 @@ This project was developed as a requirement for the **B.S. Computer Engineering*
 **Authors:**
 * Neil Justin V. Bermoy
 * David D. Vallenas
-* Group 8
 
 **Institution:**
 Mapúa Malayan Colleges Mindanao  
